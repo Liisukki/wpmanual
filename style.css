@@ -10,6 +10,9 @@ Version: 1.0.0
 TABLE OF CONTENTS 
 
 Elements
+Forms
+Fonts
+Links
 Site container
 Navigation
 Header
@@ -34,7 +37,7 @@ input[type="submit"] {
         hsl(233deg 91% 73%) 25%,
         hsl(225deg 76% 65%) 50%,
         hsl(283deg 36% 59%) 75%
-    );;
+    );
     font-family: 'Sofia Sans Condensed';
     font-size: 16px;
     font-weight: bold;
@@ -65,10 +68,12 @@ a:hover,
 a:active {
 
 }
+
 body {
     font-family: 'Sofia Sans Condensed';
 }
-/*---  page container ---*/
+
+/*---  Page container ---*/
 
 #site-container {
     max-width: 1200px;
@@ -182,7 +187,7 @@ body {
 
 
 #content main {
-    width: 70%;
+    width: 80%;
 }
 
 #content main article {
@@ -192,6 +197,7 @@ body {
 
 #content main article p {
     font-size: 18px;
+    margin: 15px;
 }
 
 #content main article:last-child {
@@ -219,9 +225,12 @@ body {
     font-size: 26px;
 }
 
-#sidebar {
+#content #sidebar {
     width: 20%;
+    margin-top: 50px;
+    margin-left: 30px;
     padding-left: 20px;
+    border-left: dashed 1px #b3b3b3;
 }
 
 #content #sidebar a {
@@ -239,6 +248,29 @@ body {
 
 #content #sidebar > div:first-child > h1, #content #sidebar > div:first-child > h2 {
     margin-top: 5px;
+}
+
+/*--- Archives page ---*/
+
+#content #category-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content #category-box #category-section {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#content #category-box #category-section h3 a{
+    margin: 15px;
+    text-decoration: none;
+}
+
+#category-box #category-section:nth-child(3) {
+    padding-right: 0; /* Tyhjentää jokaisen toisen elementin kohdalla */
 }
 
 #error-search {

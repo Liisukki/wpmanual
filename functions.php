@@ -26,9 +26,6 @@ function manual_assets()
         '1.0.0',
         true
     );
-    wp_enqueue_style('cc-style', plugin_dir_url(__FILE__) . 'assets/style.css');
-    wp_enqueue_script('cc-script', plugin_dir_url(__FILE__) . 'assets/script.js', array('jquery'), null, true);
-
 }
 
 

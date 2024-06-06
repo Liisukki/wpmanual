@@ -16,7 +16,13 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>> <!-- Adds a bunch of classes for every page -->
+
+<?php if (function_exists( 'wp_body_open' )) {
+wp_body_open(  );
+}
+?> <!-- Enables adding JS right after the body-tag -->
+
 	<div id="site-container">
 		<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'yourtheme'); ?>">
 			<?php wp_nav_menu([
