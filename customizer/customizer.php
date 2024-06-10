@@ -20,7 +20,7 @@ function manual_custom_header_setup() {
         'width'              => 1200,
         'height'             => 500,
         'header-text '       => true,
-        'default-image'      => get_template_directory_uri(  ) . '/assets/img/header-img.jpg'
+        'default-image'      => ''
     );
 
     add_theme_support( 'custom-header', $defaults );

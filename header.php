@@ -1,37 +1,43 @@
 <?php
 /**
- * The header for our theme
+ * Header file
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WP manual theme
  * 
  */
 ?>
 
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>> <!-- Displays the language attributes dynamically -->
 
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>"> <!-- Displays the encoding of the current site dynamically -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php wp_head(); ?>
+
+	<?php wp_head(); ?> <!-- Prints scripts and data in the head tag on the front end -->
 </head>
 
-<body <?php body_class(); ?>> <!-- Adds a bunch of classes for every page -->
+<body <?php body_class(); ?>> <!-- Displays the class names for the body element dynamically -->
 
-<?php if (function_exists( 'wp_body_open' )) {
-wp_body_open(  );
-}
-?> <!-- Enables adding JS right after the body-tag -->
+<!-- Check backward compability in case someone uses WP version < 5.2 -->
+<?php if (function_exists( 'wp_body_open' )) { 
+	wp_body_open(  );
+	} ?> <!-- Enables adding JS right after the body-tag -->
 
-	<div id="site-container">
+	<div id="page" class="site-container">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-manual' ); ?></a>
+		
+
 		<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'wp-manual-theme'); ?>">
 			<?php wp_nav_menu([
 				'theme_location' => 'primary'
 			]) ?>
 		</nav>
-		<header id="site-header">
-			<h1>
-				<?php bloginfo('name'); ?>
+		<header id="masthead" class="site-header" role="banner">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>>
+				
 			</h1>
 
 			<div class="description">
