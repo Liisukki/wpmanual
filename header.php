@@ -24,7 +24,7 @@ wp_body_open(  );
 ?> <!-- Enables adding JS right after the body-tag -->
 
 	<div id="site-container">
-		<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'yourtheme'); ?>">
+		<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'wp-manual-theme'); ?>">
 			<?php wp_nav_menu([
 				'theme_location' => 'primary'
 			]) ?>

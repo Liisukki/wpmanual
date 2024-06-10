@@ -15,3 +15,9 @@ jQuery(document).ready(function($) {
         }
     }).resize(); // Trigger the resize event on load to set the initial state
 });
+
+
+jQuery(document).ready(function() {
+    console.log('ÄLÄLÄLLÄ');
+
+});

@@ -1,7 +1,7 @@
-=== WP manual ===
+=== WordPress theme - WP manual ===
 
 Contributors: Liisa Kotilainen
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, lazy-loading
 
 Requires at least: 
 Tested up to: 
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called WP manual.
+A theme called WP manual theme.
 
 == Description ==
 

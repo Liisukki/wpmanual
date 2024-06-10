@@ -17,15 +17,10 @@ register_nav_menus([
 /* Register stylesheets and scripts */
 function manual_assets()
 {
-    wp_enqueue_style('style', get_stylesheet_uri());
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700&display=swap', false);
-    wp_enqueue_script(
-        'responsivity-script',
-        get_template_directory_uri() . '/assets/js/responsivity.js',
-        array('jquery'),
-        '1.0.0',
-        true
-    );
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700&display=swap', false );
+    wp_enqueue_script( 'responsivity-script', get_template_directory_uri() . '/assets/js/responsivity.js',
+        array('jquery'), '1.0.0', true );
 }
 
 
@@ -42,10 +37,9 @@ function manual_widgets_init()
             'after_widget' => '</div>',
             'before_title' => '<h2>',
             'after_title' => '</h2>',
-        )
-    );
-
+        ));
 }
+
 add_action('widgets_init', 'manual_widgets_init');
 
 /* Customize excerpt read more link */
@@ -53,7 +47,16 @@ function excerpt_read_more($more)
 {
     return sprintf('<br><br><a href="%s" class="readmore">%s &raquo;</a>', esc_url(get_permalink()), __('Read more', 'textdomain'));
 }
+
 add_filter('excerpt_more', 'excerpt_read_more');
+
+/**
+ * --------------------------------------------------------------------------------
+ * Theme Customization Options
+ * --------------------------------------------------------------------------------
+*/
+require_once ( get_template_directory() . '/customizer/customizer.php' );
+
 
 /* Theme setup */
 function manual_theme_setup()
@@ -63,10 +66,8 @@ function manual_theme_setup()
 
 add_action( 'after_setup_theme', 'manual_theme_setup' );
 
-add_action( 'after_setup_theme', 'wp_add_block_template_part_support' );
-
 function wp_add_block_template_part_support() {
     add_theme_support( 'block-template-parts' );
 }
 
-?>
+add_action( 'after_setup_theme', 'wp_add_block_template_part_support' );
