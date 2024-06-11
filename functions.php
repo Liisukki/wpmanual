@@ -81,10 +81,29 @@ require_once ( get_template_directory() . '/customizer/customizer.php' );
 * Function to get the document title from WordPress 
 * dynamically instead of a hard coded <title> 
 */
+function manual_custom_logo_setup() {
+    $defaults = array(
+        'height'    => 100,
+        'width'     => 400,
+        'flex-height'   => true,
+        'flex-width'    => true,
+        'header-text'   => array( 'site-title', 'site-description'),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+
+add_action( 'after_setup_theme', 'manual_custom_logo_setup' );
 function manual_theme_setup()
 {
-    add_theme_support('title-tag');
-}
+    add_theme_support( 'manual_title-tag' );
+    add_theme_support( 'custom-logo', [
+        'header-text'   => [ 'site-title', 'site-description' ],
+        'height'    => 100,
+        'width'     => 400,
+        'flex-height'   => true,
+        'flex-width'    => true,
+        ] );
+    }
 
 add_action( 'after_setup_theme', 'manual_theme_setup' );
 

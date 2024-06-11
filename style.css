@@ -247,21 +247,19 @@ body {
 	height: 400px;
     margin-bottom: 15px;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
  }
 
 #masthead h1  {
-	text-align: left;
     text-decoration: none;
-	padding-top: 180px;
-	padding-left: 30px;
-	margin: auto;
-    font-size: 4.5em;
 }
 
 #masthead .description {
-	margin-left: 45px;
-	margin-top: 35px;
 	font-size: 1.5em;
+    margin-left: 10px;
 }
 
 /*--- Content ---*/
@@ -369,8 +367,6 @@ body {
 /*--- Footer --- */
 
 
-
-
 /*----------------------------------------------------------------*/
 #content #gallery-container {
     max-width: 100%;
@@ -415,14 +411,24 @@ body {
 
 /*----------------------------------------------------------------*/
 
-
-
-
-
-#site-footer {
+#site-footer div {
     padding: 30px;
     margin-top: 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-footer #footer-logo {
+    max-width: 100%;
+    object-fit: contain;
+    display: flex;
+    
+}
+#site-footer #copyright-text {
+    max-width: 100%;
+    display: flex;
 }
 
 /* Media query for screens under 650px in width */
