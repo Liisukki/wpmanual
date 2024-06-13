@@ -12,10 +12,25 @@
 
 /* Register menus */
 register_nav_menus([
-    'primary' => __('Main menu', 'textdomain')
+    'primary' => esc_html__('Main menu', 'wp-manual-theme')
 ]);
 
-
+	/*
+		* Switch default core markup for search form, comment form, and comments
+		* to output valid HTML5.
+		*/
+        add_theme_support(
+            'html5',
+            array(
+                'search-form',
+                'comment-form',
+                'comment-list',
+                'gallery',
+                'caption',
+                'style',
+                'script',
+            )
+        );
 /* 
 * Register and enqueue all assets
 * https://www.wpbeginner.com/wp-tutorials/how-to-properly-add-javascripts-and-styles-in-wordpress/
