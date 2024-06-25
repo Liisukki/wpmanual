@@ -90,7 +90,7 @@ Version notes
 
 [9. REFERENCES](#_toc168350184)
 
-1. # <a name="_toc168350153"></a>Introduction
+# <a name="_toc168350153"></a>1. Introduction
 
 This manual is created to help WordPress developers create customized websites. It contains tips on how to create websites with WordPress following some key best practices. It guides through selecting a third-party theme and customizing it and how to start theme development on your own by either creating a child theme or a custom theme from scratch or by using a starter theme. Selecting, using and creating plugins and creating online stores are covered as well.
 
