@@ -1,10 +1,8 @@
 WordPress manual 1.0
 
-**WordPress manual**
+# **WordPress manual**
 
-Liisa Kotilainen
-
-theFIRMA 2024
+Liisa Kotilainen - theFIRMA 2024
 
 Version control
 
