@@ -44,9 +44,9 @@ Version notes
 
 - [3.3 Customizing a theme](#_toc168350161)
 
-- [3.3.1 Theme builders and templates](#_toc168350162)
+  - [3.3.1 Theme builders and templates](#_toc168350162)
 
-- [3.3.2 Child themes](#_toc168350163)
+  - [3.3.2 Child themes](#_toc168350163)
 
 [4. Theme development tips](#_toc168350164)
 
