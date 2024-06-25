@@ -1,5 +1,4 @@
-
-|: # **WordPress manual** :|
+# |: **WordPress manual** :|
 
 : Liisa Kotilainen - theFIRMA 2024 :
 
