@@ -90,7 +90,7 @@ Version notes
 
 [9. REFERENCES](#_toc168350184)
 
-# <a name="_toc168350153"></a>1. Introduction
+# <a name="_toc168350153"></a>Introduction
 
 This manual is created to help WordPress developers create customized websites. It contains tips on how to create websites with WordPress following some key best practices. It guides through selecting a third-party theme and customizing it and how to start theme development on your own by either creating a child theme or a custom theme from scratch or by using a starter theme. Selecting, using and creating plugins and creating online stores are covered as well.
 
@@ -100,85 +100,83 @@ An example site and theme are used to support this manual. Example executions ar
 
 All topics may not be covered by the time this manual is released and thus [this manual is meant to be continued and extended](#_extending_the_manual). Some topics are pre-created to be filled and suggestions for future topics are provided.
 
-1. # <a name="_toc168350154"></a>Manual instructions
+# <a name="_toc168350154"></a>Manual instructions
 
 All topics may not be relevant to your needs. Use the table of contents to navigate through this manual.
 
 This manual contains internal links that guide to related topics. All include a reference as to where it can be found on the website or theme files and code.
 
-1. ## <a name="_toc168350155"></a>Website and developer tools
+## <a name="_toc168350155"></a>Website and developer tools
 
 The examples in this manual can all be found on the website. Utilize the developer tools to inspect the source code of a selected page, section, or element.
 
 Console log and comments in the html
 
-1. ## <a name="_toc168350156"></a>Theme files and code
+## <a name="_toc168350156"></a>Theme files and code
 
 The theme files provide information in the header comment and in relevant places in the code.
 
-1. ## <a name="_extending_the_manual"></a><a name="_toc168350157"></a>Extending the manual
+## <a name="_extending_the_manual"></a><a name="_toc168350157"></a>Extending the manual
 
 It is the wish of the original creator of this work that the style and vision are respected in the future. Provide examples, tips, further readings as well as references to back you up. Break topics into sections and use informative headings and subheadings. Remember to mark down a new version number for the manual when content is created. Also follow the lead on how to work with the theme code, commentary, files, and the website itself. In code references, include the filename and the starting line number of the code snippet. In image references, include the place where the example can be found on the website.
 
-1. # <a name="_toc168350158"></a>Best practices
+# <a name="_toc168350158"></a>Best practices
 
-1. ## <a name="_toc168350159"></a>Creating content
+## <a name="_toc168350159"></a>Creating content
 
-1. ## <a name="_toc168350160"></a>Selecting a theme
+## <a name="_toc168350160"></a>Selecting a theme
 
-1. ## <a name="_toc168350161"></a>Customizing a theme
+## <a name="_toc168350161"></a>Customizing a theme
 
-1. ### <a name="_toc168350162"></a>Theme builders and templates
+### <a name="_toc168350162"></a>Theme builders and templates
 
 - Use templates for headers, footers and repetitive posts and pages
 - Use global settings
 
-1. ### <a name="_toc168350163"></a>Child themes
+### <a name="_toc168350163"></a>Child themes
 
-1. # <a name="_toc168350164"></a>Theme development tips
+# <a name="_toc168350164"></a>Theme development tips
 
-1. ## <a name="_toc168350165"></a>Local or hosted?
+## <a name="_toc168350165"></a>Local or hosted?
 
-1. ## <a name="_toc168350166"></a>Installing WordPress
+## <a name="_toc168350166"></a>Installing WordPress
 
-1. ## ` `<a name="_toc168350167"></a>Utilizing developer tools
+## ` `<a name="_toc168350167"></a>Utilizing developer tools
 
-1. ## <a name="_toc168350168"></a>Utilizing open-source themes for learning
+## <a name="_toc168350168"></a>Utilizing open-source themes for learning
 
-1. ## <a name="_toc168350169"></a>Skill requirements
+## <a name="_toc168350169"></a>Skill requirements
 
-1. # ` `<a name="_toc168350170"></a>Child themes
+# ` `<a name="_toc168350170"></a>Child themes
 
-1. ## <a name="_toc168350171"></a>Choosing a parent theme
+## <a name="_toc168350171"></a>Choosing a parent theme
 
-1. ## ` `<a name="_toc168350172"></a>Creating a child theme
+## ` `<a name="_toc168350172"></a>Creating a child theme
 
-1. # <a name="_toc168350173"></a>Starter and custom themes
+# <a name="_toc168350173"></a>Starter and custom themes
 
-1. ## <a name="_toc168350174"></a>Starter theme
+## <a name="_toc168350174"></a>Starter theme
 
-1. ## <a name="_toc168350175"></a>Creating a theme
+## <a name="_toc168350175"></a>Creating a theme
 
-1. ## ` `<a name="_toc168350176"></a>Responsivity
+## ` `<a name="_toc168350176"></a>Responsivity
 
-1. ## <a name="_toc168350177"></a>Localization and translating
+## <a name="_toc168350177"></a>Localization and translating
 
-1. # <a name="_toc168350178"></a>Plugins
-
-The position of this topic may be altered.
-
-1. ## <a name="_toc168350179"></a>Selecting plugins
-
-1. ## <a name="_toc168350180"></a>Creating plugins
-
-1. # <a name="_toc168350181"></a>Online stores
+# <a name="_toc168350178"></a>Plugins
 
 The position of this topic may be altered.
 
-1. ## <a name="_toc168350182"></a>Plugins
+## <a name="_toc168350179"></a>Selecting plugins
 
-1. ## <a name="_toc168350183"></a>Customizing
+## <a name="_toc168350180"></a>Creating plugins
 
-1. # <a name="_toc168350184"></a>REFERENCES
+# <a name="_toc168350181"></a>Online stores
 
-2
+The position of this topic may be altered.
+
+## <a name="_toc168350182"></a>Plugins
+
+## <a name="_toc168350183"></a>Customizing
+
+# <a name="_toc168350184"></a>REFERENCES
