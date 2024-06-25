@@ -18,27 +18,15 @@ function manual_customize_register( $wp_customize ) {
 function manual_custom_header_setup() {
     $defaults = array(
         'width'              => 1200,
-        'height'             => 500,
+        'height'             => 5400,
         'header-text '       => true,
-        'default-image'      => ''
+        'flex-height'        => true,
+        'flex-width'         => true,
+        'uploads'            => true,
+        'default-image'      => '',
     );
-
     add_theme_support( 'custom-header', $defaults );
 
-    $header_images = array (
-    'header-img' => array (
-        'url' => get_template_directory_uri() . '/assets/img/header-img.png',
-        'thumbnail_url' => get_template_directory_uri() . '/assets/img/header-img-sm.jpg',
-        'description' => 'Nerd'
-    ),
-    'example' => array (
-        'url' => get_template_directory_uri(  ) . '/assets/img/example.jpg',
-        'thumbnail_url' => get_template_directory_uri(  ) . '/assets/img/example-sm.png',
-        'description' => 'Facepalm'
-        )
-    );
-    
-    register_default_headers( $header_images );
 }
 
 add_action( 'after_setup_theme', 'manual_custom_header_setup' );

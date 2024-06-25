@@ -27,19 +27,18 @@
 	} ?> <!-- Enables adding JS right after the body-tag -->
 
 	<div id="page" class="site-container">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-manual' ); ?></a>
-	<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'wp-manual-theme'); ?>">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'sakken-galleria'); ?></a>
+    <header id="masthead" class="site-header" style="background-image: url(<?php header_image(); ?>);">
+		<nav id="top-nav" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'wp-manual-theme'); ?>">
 			<?php wp_nav_menu([
 				'theme_location' => 'primary'
 			]) ?>
 		</nav>
-	<header id="masthead" class="site-header">
 
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>>
-				
-			</h1>
-
+			<div class="site-title-container">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div class="description">
 				<?php bloginfo('description'); ?>
 			</div>
-		</header>
+		</div>
+	</header>

@@ -1,4 +1,4 @@
-<div?php
+<?php
 /**
  * The template for displaying the footer
  *
@@ -21,7 +21,7 @@
 	</div>
 </div>
 </footer>
-</div> <!-- site-container -->
+</> <!-- site-container -->
 <?php wp_footer(); ?>
 </body>
 
