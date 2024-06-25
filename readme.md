@@ -26,67 +26,67 @@ Version notes
 
 # Table of contents
 
-- [1. Introduction](#_toc168350153)
+[1. Introduction](#_toc168350153)
 
-  - [2. Manual instructions](#_toc168350154)
+[2. Manual instructions](#_toc168350154)
 
-[2.1 Website and developer tools](#_toc168350155)
+- [2.1 Website and developer tools](#_toc168350155)
 
-[2.2 Theme files and code](#_toc168350156)
+- [2.2 Theme files and code](#_toc168350156)
 
-[2.3 Extending the manual](#_toc168350157)
+- [2.3 Extending the manual](#_toc168350157)
 
 [3. Best practices](#_toc168350158)
 
-[3.1 Creating content](#_toc168350159)
+- [3.1 Creating content](#_toc168350159)
 
-[3.2 Selecting a theme](#_toc168350160)
+- [3.2 Selecting a theme](#_toc168350160)
 
-[3.3 Customizing a theme](#_toc168350161)
+- [3.3 Customizing a theme](#_toc168350161)
 
-[3.3.1 Theme builders and templates](#_toc168350162)
+- [3.3.1 Theme builders and templates](#_toc168350162)
 
-[3.3.2 Child themes](#_toc168350163)
+- [3.3.2 Child themes](#_toc168350163)
 
 [4. Theme development tips](#_toc168350164)
 
-[4.1 Local or hosted?](#_toc168350165)
+- [4.1 Local or hosted?](#_toc168350165)
 
-[4.2 Installing WordPress](#_toc168350166)
+- [4.2 Installing WordPress](#_toc168350166)
 
-[4.3 Utilizing developer tools](#_toc168350167)
+- [4.3 Utilizing developer tools](#_toc168350167)
 
-[4.4 Utilizing open-source themes for learning](#_toc168350168)
+- [4.4 Utilizing open-source themes for learning](#_toc168350168)
 
-[4.5 Skill requirements](#_toc168350169)
+- [4.5 Skill requirements](#_toc168350169)
 
 [5. Child themes](#_toc168350170)
 
-[5.1 Choosing a parent theme](#_toc168350171)
+- [5.1 Choosing a parent theme](#_toc168350171)
 
-[5.2 Creating a child theme](#_toc168350172)
+- [5.2 Creating a child theme](#_toc168350172)
 
 [6. Starter and custom themes](#_toc168350173)
 
-[6.1 Starter theme](#_toc168350174)
+- [6.1 Starter theme](#_toc168350174)
 
-[6.2 Creating a theme](#_toc168350175)
+- [6.2 Creating a theme](#_toc168350175)
 
-[6.3 Responsivity](#_toc168350176)
+- [6.3 Responsivity](#_toc168350176)
 
-[6.4 Localization and translating](#_toc168350177)
+- [6.4 Localization and translating](#_toc168350177)
 
 [7. Plugins](#_toc168350178)
 
-[7.1 Selecting plugins](#_toc168350179)
+- [7.1 Selecting plugins](#_toc168350179)
 
-[7.2 Creating plugin](#_toc168350180)
+- [7.2 Creating plugin](#_toc168350180)
 
 [8. Online stores](#_toc168350181)
 
-[8.1 Plugins](#_toc168350182)
+- [8.1 Plugins](#_toc168350182)
 
-[8.2 Customizing](#_toc168350183)
+- [8.2 Customizing](#_toc168350183)
 
 [9. REFERENCES](#_toc168350184)
 
