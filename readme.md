@@ -26,9 +26,9 @@ Version notes
 
 # Table of contents
 
-[1. Introduction](#_toc168350153)
+- [1. Introduction](#_toc168350153)
 
-[2. Manual instructions](#_toc168350154)
+  - [2. Manual instructions](#_toc168350154)
 
 [2.1 Website and developer tools](#_toc168350155)
 
