@@ -1,5 +1,3 @@
-WordPress manual 1.0
-
 # **WordPress manual**
 
 Liisa Kotilainen - theFIRMA 2024
