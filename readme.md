@@ -141,17 +141,17 @@ It is the wish of the original creator of this work that the style and vision ar
 
 ## <a name="_toc168350166"></a>Installing WordPress
 
-## ` `<a name="_toc168350167"></a>Utilizing developer tools
+## <a name="_toc168350167"></a>Utilizing developer tools
 
 ## <a name="_toc168350168"></a>Utilizing open-source themes for learning
 
 ## <a name="_toc168350169"></a>Skill requirements
 
-# ` `<a name="_toc168350170"></a>Child themes
+# <a name="_toc168350170"></a>Child themes
 
 ## <a name="_toc168350171"></a>Choosing a parent theme
 
-## ` `<a name="_toc168350172"></a>Creating a child theme
+## <a name="_toc168350172"></a>Creating a child theme
 
 # <a name="_toc168350173"></a>Starter and custom themes
 
@@ -159,7 +159,7 @@ It is the wish of the original creator of this work that the style and vision ar
 
 ## <a name="_toc168350175"></a>Creating a theme
 
-## ` `<a name="_toc168350176"></a>Responsivity
+## <a name="_toc168350176"></a>Responsivity
 
 ## <a name="_toc168350177"></a>Localization and translating
 
