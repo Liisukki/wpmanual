@@ -11,15 +11,9 @@
 ?>
 
 <footer id="site-footer" role="contentinfo">
-<div id="footer-logo"> 
-<?php if ( function_exists( 'the_custom_logo') ) {
-			the_custom_logo();
-		}
-		?>
-		<div id="copyright-text">
+<div id="copyright-text">
 	&copy; <?php echo date('Y'); ?> <?php _e('theFIRMA & Liisa Kotilainen', 'theFIRMA_example_2'); ?>
 	</div>
-</div>
 </footer>
 </> <!-- site-container -->
 <?php wp_footer(); ?>

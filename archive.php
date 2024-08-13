@@ -6,7 +6,6 @@ get_header(); ?>
 
 <div id="content">
     <main>
-    <h2><a><?php the_title(); ?></a></h2>
         <div id="category-box">
             <?php 
             // Haetaan kaikki kategoriat aakkosjärjestyksessä
