@@ -1,57 +1,65 @@
 <?php 
-/* 
-Template Name: Archives
+/** 
+* Template Name: Archives
+* 
+* This archives page displays an excerpt of the three latest articles
+* iterating through them category per category.
+*
+* @package WP manual theme
 */
 get_header(); ?>
 
 <div id="content">
     <main>
         <div id="category-box">
-            <?php 
-            // Haetaan kaikki kategoriat aakkosjärjestyksessä
-            $categories = get_categories(array(
-                'orderby' => 'name',
-                'order' => 'ASC'
-            ));
+<?php 
 
-            // Käydään läpi kaikki kategoriat
-            foreach ( $categories as $category ) {
+$categories = get_categories(); // Get all categories
 
-                echo '<section id="category-section">';
+foreach ($categories as $category) : ?>
 
-                // Tulostetaan kategorian nimi
-                echo '<h2>' . $category->name . '</h2>';
+<div class="category-section">
+        <h2><?php echo esc_html($category->name); ?></h2>
 
-                // Haetaan kategorian postaukset aakkosjärjestyksessä
-                $args = array(
-                    'post_type' => 'post',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'category_name' => $category->slug,
-                    'posts_per_page' => -1
-                );
+        <?php
 
-                $category_posts = new WP_Query($args);
+        $the_query = new WP_Query(array(
+            'cat' => $category->term_id, // Get all articles from a category
+            'orderby' => 'date',
+            'order' => 'desc',
+            'posts_per_page' => '3',
+    ));
 
-                // Jos kategorialla on postauksia, näytetään ne
-                if ($category_posts->have_posts()) : 
+    if ($the_query->have_posts()) : ?>
 
-                    while($category_posts->have_posts()) : $category_posts->the_post(); ?>   
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <div class="articles-row"> <!-- Articles are displayed in rows  -->
+
+        <?php
+        while($the_query->have_posts()) : $the_query->the_post(); ?>   
+        <div class="article-box">
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <p class="date"><?php echo get_the_date(); ?></p>
+            <?php the_excerpt(); ?>
+         </div> <!-- article-box -->
+        <?php
+        endwhile;
+        ?>
+        </div> <!-- articles-row -->
+        <?php
+        wp_reset_postdata();
+    else: ?>
+                    <p>No articles in this category.</p>
                     <?php
-                    endwhile;
-                    wp_reset_postdata();
-                else: ?>
-                    <p>Ei kirjoituksia tässä kategoriassa.</p>
-                <?php
-                endif;
-                  // Suljetaan div kategorian sisällä
-                  echo '</section>';
-            }
-            ?>
-        </div>
+    endif; ?>
+        </div> <!-- category-section -->
+        <?php 
+        endforeach; ?>
+        </div> <!-- category-box -->
     </main>
-    <?php get_sidebar(); ?>
-</div> <!-- #content -->
 
-<?php get_footer(); ?>
+    <?php get_sidebar(); ?>
+
+</div> <!-- content -->
+<?php 
+get_footer();
+?>

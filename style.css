@@ -116,6 +116,11 @@ textarea:focus {
   color: #111;
 }
 
+/*--- Stuff ---*/
+p {
+  margin-left: 15px;
+}
+
 /*--- Fonts ---*/
 
 h1 {
@@ -303,7 +308,8 @@ body {
 }
 
 #content main a.readmore {
-  font-size: 18px;
+  margin-top: 10px;
+  display: block;
 }
 
 #content main h2 {
@@ -344,26 +350,51 @@ body {
 }
 
 /*--- Archives page ---*/
+/*--- Archives page ---*/
 
-#content #category-box {
-  display: flex;
-  flex-wrap: wrap;
+.category-section {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-#content #category-box #category-section {
-  width: 50%;
-  box-sizing: border-box;
+.articles-row {
+  display: flex;
+  flex-wrap: wrap; /* Rivittää laatikot, jos ei mahdu samalle riville */
+  margin: -10px; /* Kompensoi padding */
+}
+
+.article-box {
+  width: calc(33.333% - 20px); /* Kolme laatikkoa rinnakkain */
+  margin: 10px;
   padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.article-box h3 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.article-box .date {
+  font-size: 0.9em;
+  color: #999;
   margin-bottom: 10px;
 }
 
-#content #category-box #category-section h3 a {
-  margin: 15px;
-  text-decoration: none;
+@media (max-width: 768px) {
+  .article-box {
+    width: calc(50% - 20px); /* Two boxes per row if width is < 768px */
+  }
 }
 
-#category-box #category-section:nth-child(3) {
-  padding-right: 0; /* Tyhjentää jokaisen toisen elementin kohdalla */
+@media (max-width: 480px) {
+  .article-box {
+    width: 100%; /* One box per row if width is < 480px */
+  }
 }
 
 #error-search {
