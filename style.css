@@ -286,6 +286,11 @@ body {
 #content main {
   width: 80%;
 }
+/* Kun sivupalkki on pois käytöstä */
+#content.no-sidebar main {
+  width: 100%;
+  margin: 0 auto;
+}
 
 #content main article {
   border-bottom: 1px dashed #b3b3b3;
@@ -302,7 +307,7 @@ body {
 }
 
 #content main a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #333333;
   font-size: 16px;
 }
@@ -357,8 +362,14 @@ body {
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  background: #d0eef556;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
+.category-section h2 {
+  font-size: 26px;
+}
 .articles-row {
   display: flex;
   flex-wrap: wrap; /* Rivittää laatikot, jos ei mahdu samalle riville */
@@ -368,15 +379,33 @@ body {
 .article-box {
   width: calc(33.333% - 20px); /* Kolme laatikkoa rinnakkain */
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background: #fffef9;
+  position: relative;
 }
 
-.article-box h3 a {
-  text-decoration: none;
-  color: #333;
+.post-thumbnail {
+  width: 100%;
+  height: 300px; /* Maksimikorkeus 300px */
+  overflow: hidden; /* Piilottaa osat, jotka ylittävät rajan */
+  margin: 15px 0; /* Marginaali kuvien ympärille */
+  box-sizing: border-box;
+}
+
+.post-thumbnail a {
+  display: block; /* Varmistaa, että linkki kattaa koko kuvan */
+  width: 100%;
+  height: 100%;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: 100%; /* Kuva täyttää vanhempansa korkeusrajan */
+  object-fit: cover; /* Croppaa kuvan sopimaan asetettuun alueeseen */
+  display: block;
 }
 
 .article-box .date {
@@ -394,6 +423,104 @@ body {
 @media (max-width: 480px) {
   .article-box {
     width: 100%; /* One box per row if width is < 480px */
+  }
+}
+
+/*--- Categories page ---*/
+
+#categories-container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: -10px;
+}
+.no-subcategories-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desc-box {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Jos vain yksi kategoria, vie koko leveys */
+.no-subcategories-container:only-child .desc-box {
+  flex: 1 1 100%;
+}
+
+.desc-box h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.desc-box p {
+  margin-bottom: 20px;
+}
+
+/* Pääkategoriat, joilla on alakategorioita - koko leveys */
+.full-width-category-box {
+  flex: 1 1 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.full-width-category-box h2 {
+  margin-top: 0;
+  font-size: 1.25em;
+}
+
+.full-width-category-box p {
+  margin-bottom: 20px;
+}
+
+.subcat-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.subcat-box {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.subcat-box h3 {
+  margin: 15px;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .desc-box,
+  .subcat-box {
+    flex: 1 1 calc(50% - 20px); /* Kaksi laatikkoa rinnakkain, jos leveys alle 768px */
+  }
+
+  .full-width-category-box {
+    padding: 10px; /* Vähennä täytealueita pienemmillä näytöillä */
+  }
+}
+
+@media (max-width: 480px) {
+  .desc-box,
+  .subcat-box {
+    flex: 1 1 100%; /* Yksi laatikko per rivi, jos leveys alle 480px */
+  }
+  .full-width-category-box {
+    padding: 5px; /* Vähennä täytealueita vieläkin pienemmillä näytöillä */
   }
 }
 

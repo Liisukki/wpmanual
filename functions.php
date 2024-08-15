@@ -31,6 +31,13 @@ register_nav_menus([
                 'script',
             )
         );
+
+        add_theme_support( 'post-thumbnails' );
+        function custom_image_sizes() {
+            add_image_size('custom-size', 400, 300, true); // Leveys: 300px, Korkeus: 200px, Crop: true
+        }
+        add_action('after_setup_theme', 'custom_image_sizes');
+        
 /* 
 * Register and enqueue all assets
 * https://www.wpbeginner.com/wp-tutorials/how-to-properly-add-javascripts-and-styles-in-wordpress/

@@ -9,7 +9,7 @@
 */
 get_header(); ?>
 
-<div id="content">
+<div id="content" class="no-sidebar">
     <main>
         <div id="category-box">
 <?php 
@@ -20,6 +20,7 @@ foreach ($categories as $category) : ?>
 
 <div class="category-section">
         <h2><?php echo esc_html($category->name); ?></h2>
+        <p><?php echo esc_html($category->description); ?></p>
 
         <?php
 
@@ -38,6 +39,14 @@ foreach ($categories as $category) : ?>
         while($the_query->have_posts()) : $the_query->the_post(); ?>   
         <div class="article-box">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+            <?php if (has_post_thumbnail()) : ?>
+                            <div class="post-thumbnail">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('custom-size'); // Change 'medium' to other sizes as needed ?>
+                            </div>
+                        <?php endif; ?>
+
             <p class="date"><?php echo get_the_date(); ?></p>
             <?php the_excerpt(); ?>
          </div> <!-- article-box -->
@@ -56,8 +65,6 @@ foreach ($categories as $category) : ?>
         endforeach; ?>
         </div> <!-- category-box -->
     </main>
-
-    <?php get_sidebar(); ?>
 
 </div> <!-- content -->
 <?php 
